@@ -16,7 +16,7 @@ img {
 	padding: 5px;
 }
 
-#clickme {
+div.clickme {
 	text-align: center;
 }
 
@@ -32,10 +32,10 @@ img {
 } */
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
+/*@-webkit-keyframes example {
     from {background-color: red;}
     to {background-color: yellow;}
-}
+} */
 
 /* Standard syntax */
 @keyframes example {
@@ -44,17 +44,39 @@ img {
 }
 
 /* Color/Motion example */
+/*
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
     25%  {background-color:yellow; left:200px; top:0px;}
     50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
+   	 0% {opacity:0;}
+   	50% {opacity:1;}
+   100% {opacity:0;}
+}
+*/
+
+@keyframes textexample {
+    0%   {background-color:black; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;}
+    50%  {background-color:white; left:0px; top:0px;}
+    75%  {background-color:red; left:0px; top:0px;}
+    100% {background-color:black; left:0px; top:0px;}
+   	 0% {opacity:0;}
+   	50% {opacity:1;}
+   100% {opacity:0;}
 }
 
+/*
+@keyframes example {
+
+}
+*/
+
 /* The element to apply the animation to */
+/*
 #animate {
-	margin-top: 30px;
     width: 100px;
     height: 100px;
     position: relative;
@@ -63,3 +85,116 @@ img {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+*/
+
+/******************************************
+Animate Text block
+******************************************/
+#textanimate {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: textexample;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*
+#main {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff3296;
+}
+*/
+
+/*
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0 0 20px 0;
+    text-align: center;
+} */
+/* ============================================================
+  SCALE
+============================================================ */
+/*div.grow {
+  	text-align: center;
+  	transition: all .2s ease-in-out;
+  	} */
+
+div.grow:hover { 
+	/* width 300px; */
+	text-align: center;
+	padding-left: 40px;
+  	transform: scale(3.0);
+} 
+
+
+div.grow {
+	padding-left: 20px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: width 2s; /* Safari */
+
+    transition: width 2s;
+}
+
+/* For Safari 3.1 to 6.0 */
+/*#div2 {-webkit-transition-timing-function: ease;}
+#div3 {-webkit-transition-timing-function: ease-in;}
+#div4 {-webkit-transition-timing-function: ease-out;}
+#div5 {-webkit-transition-timing-function: ease-in-out;}
+*/
+
+/* Standard syntax */
+#div1 {transition-timing-function: linear;}
+/*#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;} */
+
+/*
+div:hover {
+    width: 300px;
+}
+*/
+
+/*
+.cmn-t-scale {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #ff3296;
+
+}
+*/
+/*
+.cmn-t-scale:hover {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+ 
+} */
+
