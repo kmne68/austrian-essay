@@ -141,22 +141,22 @@ section {
 div.grow:hover { 
 	/* width 300px; */
 	text-align: center;
-	padding-left: 40px;
-  	transform: scale(3.0);
+  	transform: scale(10.0);
+  	margin-left: 50px;
 } 
 
 
 div.grow {
-	padding-left: 20px;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 2px;
     background: red;
     color: white;
-    font-weight: bold;
-    -webkit-transition: width 2s; /* Safari */
-
     transition: width 2s;
+    -webkit-transition: width 2s; /* Safari */
+	font-weight: bold;
+    
 }
 
 /* For Safari 3.1 to 6.0 */
@@ -172,6 +172,8 @@ div.grow {
 #div3 {transition-timing-function: ease-in;}
 #div4 {transition-timing-function: ease-out;}
 #div5 {transition-timing-function: ease-in-out;} */
+
+div.Image { display: none; }
 
 /*
 div:hover {
