@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/page_functions.js"></script>
+
+<script type="text/javascript">
+<!--
+function makeDiv(){
+    var divsize = ((Math.random()*100) + 50).toFixed();
+    var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div/>').css({
+        'width':divsize+'px',
+        'height':divsize+'px',
+        'background-color': color
+    });
+    
+    var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+    var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
+    var numnber = (Math.random() * 100);
+
+    
+
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(100).delay(10000).fadeOut(200, function(){
+       $(this).remove();
+       makeDiv(); 
+    }); 
+}
+-->
+</script>
+
+
+
 <link rel="stylesheet" type="text/css" href="c:/var/www/css/mystyle.css">
 </head>
 <html>
